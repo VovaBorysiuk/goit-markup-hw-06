@@ -127,6 +127,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
+
+.curent{
+color: var(--hover--color);
+}
+
+
 .curent::after {
   content: "";
   display: block;
@@ -481,6 +487,7 @@ body {
 .row-wrap {
   display: flex;
   flex-direction: row;
+  margin-top: 16px;
 }
 .subscribe-label {
   color: var(--first-page-color);
@@ -488,7 +495,7 @@ body {
   font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .subscribe-input {
@@ -609,6 +616,7 @@ body {
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+  color: var(--third-page-color);
 }
 
 .image-item {
@@ -701,6 +709,9 @@ body {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -762,7 +773,7 @@ textarea {
   border: none;
   width: 100%;
   height: 38px;
-  border: 1px solid var(--second-page-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 38px;
   border-radius: 4px;
   outline: none;
@@ -792,9 +803,13 @@ textarea {
   letter-spacing: 0.04em;
   outline: none;
   background-color: transparent;
-  border: 1px solid var(--customer-logo-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 8px;
+  padding-left: 16px;
+  /* padding-bottom: 8px;
+  padding-right: 16px; */
 }
 
 .form-comment:focus,
